@@ -5,15 +5,19 @@ import Navbar from './Component/Navbar'
 import Register from './pages/Register'
 import { useEffect, useState } from 'react'
 import Dashboard from './pages/Dashboard'
-import {NextUIProvider}
 import { analytics } from './Utils';
-
 import { logEvent } from 'firebase/analytics';
-import layout
+import Chat from './pages/Chat'
+
 
 
 
 function App() {
+
+
+  if(analytics){
+    logEvent(analytics,'user visited')
+  }
 const [loggedIn,setisLoggedIn] = useState(false)
   useEffect(()=>{
     const token = localStorage.getItem("userToken")
@@ -22,7 +26,7 @@ const [loggedIn,setisLoggedIn] = useState(false)
       setisLoggedIn(true)
     }
   },[]);
-  export default function App ({})
+ 
 
   return (
     <>
@@ -33,7 +37,9 @@ const [loggedIn,setisLoggedIn] = useState(false)
           <Route path='/login' element={<Login/>}/>
           {loggedIn &&<Route path='/dashboard' element={<Dashboard/>}/>}
           <Route path='/register' element={<Register/>}/>
+          <Route path='/chat' element={<Chat/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
+        
         </Routes>
         </div>
        </>

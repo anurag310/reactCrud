@@ -15,9 +15,15 @@ const Navbar = () => {
           </Link>
           <Link to="/register" className="ml-9">
             <p>Register</p>
+         
+           
             <Link to="/dashboard" className='ml-9'>
               <p>Dashboard</p>
             </Link>
+            <Link to="/chat" className='ml-9'>
+              <p>Chat</p>
+            </Link>
+           
           </Link>
         </div>
       </nav>
