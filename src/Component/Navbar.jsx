@@ -1,33 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import logo from '../assets/logo.jpeg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <header className="bg-gray-700 text-white fixed top-0 w-full">
-      <nav className="container mx-auto flex justify-between items-center p-5 flex-col md:flex-row md:items-center md:justify-between">
-        <div className="flex items-center">
-          <img className="h-8 w-8 rounded-full" src="../src/assets/logo.png" alt="Website Logo" />
-          <p className="ml-3 text-lg font-bold">Website</p>
+    <header className=' bg-purple-400 fixed top-0   w-full '>
+      <nav className=' flex  flex-row items-center '>
+        <div>
+          <a href='/' className=' text-2xl font-semibold flex items-center space-x-3 ' >
+            <img src={logo} alt=''   className=' w-14 h-10 inline-block items-center rounded-full'/>
+            <span className=' text-purple-800 ms-5'>
+              College Information Website
+            </span>
+          </a>
         </div>
-        <div className="mt-4 md:mt-0 md:flex items-center">
-          <Link to="/login" className="ml-9">
-            <p>Login</p>
+        <div className=' flex flex-row items-center '>
+          <Link to='/login'>
+            <p className=' ml-50'>Login</p>
           </Link>
-          <Link to="/register" className="ml-9">
-            <p>Register</p>
-         
-           
-            <Link to="/dashboard" className='ml-9'>
-              <p>Dashboard</p>
+          <Link to='/register'>
+            <p className='ml-60'>Register</p>
             </Link>
-            <Link to="/chat" className='ml-9'>
-              <p>Chat</p>
+            <Link to='/dashboard'>
+              <p className='ml-70'>Dashboard</p>
             </Link>
-           
-          </Link>
+            <Link to='/chat'>
+              <p className='ml-80'>Chat</p>
+            </Link>
+            <Link to='/home'>
+              <p className='ml-80'>Home</p>
+            </Link>
+          
         </div>
       </nav>
     </header>
-  );
-};
-export default Navbar;
+  )
+}
+export default Navbar

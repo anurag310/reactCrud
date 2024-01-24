@@ -8,6 +8,8 @@ import Dashboard from './pages/Dashboard'
 import { analytics } from './Utils';
 import { logEvent } from 'firebase/analytics';
 import Chat from './pages/Chat'
+import Home from './pages/Home'
+
 
 
 
@@ -39,6 +41,7 @@ const [loggedIn,setisLoggedIn] = useState(false)
           <Route path='/register' element={<Register/>}/>
           <Route path='/chat' element={<Chat/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/home' element={<Home/>}/>
         
         </Routes>
         </div>
