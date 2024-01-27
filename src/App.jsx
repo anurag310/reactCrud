@@ -10,6 +10,7 @@ import { logEvent } from 'firebase/analytics'
 import Chat from './pages/Chat'
 import Home from './pages/Home'
 import About from './pages/About'
+import Footer from './Component/Footer'
 
 function App () {
   if (analytics) {
@@ -28,6 +29,7 @@ function App () {
     <>
       <div className=' text-white h-[100vh] flex justify-center items-center bg-cover'>
         <Navbar />
+        <Footer/>
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About/>}/>
