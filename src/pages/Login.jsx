@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
+import log from "../assets/log.jpeg"
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -61,9 +61,10 @@ export default function Login() {
 
   return (
     <>
-      <div>
+      <div >
+      <img src={log} alt='' />
         <div>
-          <img src='../assets/download.jpeg' alt='' />
+         
           <div className=" border-style:solid bg-slate-950 border border-slate-950 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative"  >
             <h1 className=" text-4xl  text-white font-bold text-center mb-4">Login</h1>
             <form onSubmit={handleLogin} action="">
