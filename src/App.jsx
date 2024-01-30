@@ -10,7 +10,8 @@ import { logEvent } from 'firebase/analytics'
 import Chat from './pages/Chat'
 import Home from './pages/Home'
 import About from './pages/About'
-import Footer from './Component/Footer'
+import Footer from './Footer/Footer'
+
 
 function App () {
   if (analytics) {
@@ -29,12 +30,12 @@ function App () {
     <>
       <div className=' text-white h-[100vh] flex justify-center items-center bg-cover'>
         <Navbar />
-        <Footer/>
+     <Footer/>
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About/>}/>
           <Route path='/login' element={<Login />} />
-          {loggedIn && <Route path='/dashboard' element={<Dashboard />} />}
+           {loggedIn && <Route path='/dashboard' element={<Dashboard />}/>}
           <Route path='/register' element={<Register />} />
           <Route path='/chat' element={<Chat />} />
           <Route path='/dashboard' element={<Dashboard />} />

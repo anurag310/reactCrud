@@ -15,25 +15,24 @@ const Navbar = () => {
           </a>
         </div>
         <div className=' flex flex-row items-center p-50 '>
-          <Link to='/login'>
-            <p className=' ml-10 '>Login</p>
-          </Link>
-          <Link to='/register'>
-            <p className='ml-10'>Register</p>
-            </Link>
-            <Link to='/dashboard'>
-              <p className='ml-10'>Dashboard</p>
-            </Link>
-            <Link to='/chat'>
-              <p className='ml-10'>Chat</p>
-            </Link>
+          
+         
+           
             <Link to='/home'>
               <p className='ml-10'>Home</p>
             </Link>
             <Link to='/about'>
               <p className='ml-10'>About</p>
             </Link>
-          
+            <Link to='/chat'>
+              <p className='ml-10'>Chat</p>
+            </Link>
+            <Link to='/register'>
+            <p className='ml-10'>Register</p>
+            </Link>
+            <Link to='/login'>
+            <p className=' ml-10 '>Login</p>
+          </Link>
         </div>
       </nav>
     </header>

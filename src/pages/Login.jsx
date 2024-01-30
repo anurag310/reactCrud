@@ -57,15 +57,17 @@ export default function Login() {
         console.error(error);
         alert(`Login failed.\nError: ${error.message}`);
       });
+      
+     
   }
 
   return (
     <>
      
       <div >
-      <img src={log} alt='' />
+      <img src={log} alt='' className=' backdrop-blur-lg  bg-cover' />
         <div>
-         
+       
           <div className=" border-style:solid bg-slate-950 border border-slate-950 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative  "  >
             <h1 className=" text-4xl  text-white font-bold text-center mb-4">Login</h1>
             <form onSubmit={handleLogin} action="">
