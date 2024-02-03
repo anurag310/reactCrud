@@ -5,6 +5,7 @@ import Image from "../assets/college.jpg";
 import Book from "../assets/book.jpg";
 import Laptop from "../assets/laptop.jpg";
 import scholor from "../assets/scholor.jpg"
+import success from "../assets/success.webp"
 
 export default function Slider() {
   const containerStyle = {
@@ -14,7 +15,7 @@ export default function Slider() {
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} className='w-full h-full'>
       <Carousel
         autoPlay
         showArrows={false}
@@ -34,7 +35,10 @@ export default function Slider() {
           <img className='rounded-xl max-h-80' src={Laptop} alt="Laptop" />
         </div>
         <div>
-          <img className='rounded-xl max-h-80' src={scholor} alt="Laptop" />
+          <img className='rounded-xl max-h-80' src={scholor} alt="scholor" />
+        </div>
+        <div className='justify-center'>
+          <img className='rounded-xl max-h-80' src={success} alt="success" />
         </div>
       </Carousel>
  </div>

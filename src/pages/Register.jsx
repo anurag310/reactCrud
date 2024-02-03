@@ -82,7 +82,7 @@ export default function Register() {
       <div >
         <div>
           <div>
-            <div className="bg-black border border-slate-800 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative ">
+            <div className="bg-black border border-slate-800 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative mt-[80vh] mb-6 ">
               <h1 className="text-4xl text-white font-bold text-center mb-4">Register</h1>
               <form onSubmit={handleRegister} action="">
                 <div className="relative my-4">

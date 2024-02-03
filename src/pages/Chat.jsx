@@ -28,11 +28,11 @@ function join (){
   return (
 
 
-    <div>
+    <div className=' mt-80 mb-10'>
         {
         !isJoined? <div>
-            <input  className =' text-fuchsia-950' value={room} type="text" placeholder='Enter Room Id' onChange={(e)=> setRoom(e.target.value)}/>
-            <button className= ' text-fuchsia-950' onClick={join}>Join</button>
+            <input  className =' text-fuchsia-950 border-spacing-4 ' value={room} type="text" placeholder='Enter Room Id' onChange={(e)=> setRoom(e.target.value)}/>
+            <button className= ' text-fuchsia-950' onClick={join}><b className=' font-serif'>Join</b></button>
         </div>
           :
           
@@ -47,7 +47,7 @@ function join (){
                 })
             }
         <input  className =' text-fuchsia-950' value={message} type="text" placeholder='Enter message' onChange={(e)=> setMessage(e.target.value)}/>
-        <button className=' text-fuchsia-950' onClick={send}>Send</button>
+        <button className=' text-fuchsia-950' onClick={send}><b className=' font-serif'>Send</b></button>
         </div>
 }
     </div>

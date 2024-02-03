@@ -6,7 +6,7 @@ export default function About () {
     <div>
       <div>
       
-        <img className='items-center h-90 w-90' src={library} alt='' />
+        <img className='items-center  mt-[200vh]' src={library} alt='' />
         <h1 className=' font-bold text-center text-fuchsia-600 p-5'>WELCOME</h1>
         <p className=' text-black text-center justify-center  font-serif'>
           {' '}
