@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 import logo from '../assets/logo.jpeg'
 import { Link } from 'react-router-dom'
+import Searchbar from './Searchbar'
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div>
           <a
             href='/'
-            className=' text-2xl font-semibold flex items-center space-x-3 '
+            className=' text-2xl font-semibold flex items-center space-x-3'
           >
             <img
               src={logo}
@@ -24,27 +25,27 @@ const Navbar = () => {
         </div>
         <div className=' flex flex-row items-center p-50 '>
           <Link to='/home'>
-            <p className='ml-10  hover:text-yellow-300 font-serif'>
+            <p className='ml-10  hover:text-slate-400 font-serif'>
               <b>Home</b>
             </p>
           </Link>
           <Link to='/about'>
-            <p className='ml-10  hover:text-yellow-300 font-serif'>
+            <p className='ml-10  hover:text-slate-400 font-serif'>
               <b>About</b>
             </p>
           </Link>
           <Link to='/chat'>
-            <p className='ml-10  hover:text-yellow-300 font-serif'>
+            <p className='ml-10  hover:text-slate-400 font-serif'>
               <b>Chat</b>
             </p>
           </Link>
           <Link to='/register'>
-            <p className='ml-10  hover:text-yellow-300 font-serif'>
+            <p className='ml-10  hover:text-slate-400 font-serif'>
               <b>Register</b>
             </p>
           </Link>
           <Link to='/login'>
-            <p className=' ml-10  hover:text-yellow-300 font-serif'>
+            <p className=' ml-10  hover:text-slate-400 font-serif'>
               <b>Login</b>
             </p>
           </Link>
@@ -54,7 +55,7 @@ const Navbar = () => {
             data-dropdown-toggle='dropdownDelay'
             data-dropdown-delay='500'
             data-dropdown-trigger='hover'
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ms-20' 
+            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ms-20'
             type='button'
           >
             List{' '}
@@ -69,7 +70,7 @@ const Navbar = () => {
                 stroke='currentColor'
                 stroke-linecap='round'
                 stroke-linejoin='round'
-                stroke-width ='2'
+                stroke-width='2'
                 d='m1 1 4 4 4-4'
               />
             </svg>
@@ -104,7 +105,7 @@ const Navbar = () => {
                   href='http://localhost:5173/register'
                   className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                 >
-                 Register 
+                  Register
                 </a>
               </li>
               <li>
@@ -116,6 +117,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+        
           </div>
         </div>
       </nav>

@@ -20,7 +20,7 @@ export default function About () {
           of college, you will be entering into a new world with not only great
           memories but a sense of pride and accomplishment. We are proud of you!
         </p>
-        <h1 className='  text-fuchsia-600 text-center font-bold p-5'>
+        <h1 className='  text-fuchsia-600 text-center font-bold p-5 '>
           MISSION AND VISION
         </h1>
         <h2 className='  text-green-400 text-center font-semibold p-3 '>

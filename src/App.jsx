@@ -11,6 +11,7 @@ import Chat from './pages/Chat'
 import Home from './pages/Home'
 import About from './pages/About'
 import Footer from './Footer/Footer'
+import Searchbar from './Component/Searchbar'
 
 function App () {
   if (analytics) {
@@ -39,7 +40,7 @@ function App () {
           <Route path='/chat' element={<Chat />} />
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
-
+          <Searchbar/>
         <Footer />
       </div>
     </>
