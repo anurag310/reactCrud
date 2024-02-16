@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Component/Button'
 import study from '../assets/study.jpeg'
+
 export default function Footer () {
   return (
     <footer className=' bg-black dark: bg-indigo-300 p-6 w-full'>
@@ -135,6 +136,7 @@ export default function Footer () {
             </svg>
           </a>
         </div>
+      
       </div>
     </footer>
   )

@@ -3,12 +3,16 @@ import library from '../assets/library.jpg'
 
 export default function About () {
   return (
-    <div>
-      <div>
+    <div >
+      <div >
+      <div className="image-container mt-[200vh]">
+    <img src={library} alt="Your Image"></img>
+    <div className="overlay-text  text-black "><h1>Your Text Overlapping Image</h1></div>
+ 
       
-        <img className='items-center  mt-[200vh]' src={library} alt='' />
-        <h1 className=' font-bold text-center text-fuchsia-600 p-5'>WELCOME</h1>
-        <p className=' text-black text-center justify-center  font-serif'>
+        
+        <h1 className=' font-bold text-center text-fuchsia-600 p-5 '>WELCOME</h1>
+        <p className=' text-black text-center justify-center  font-serif overlap'>
           {' '}
           “You are going to fall down, but the world does not care how many
           times you fall down, as long as its one fewer than the numbers of
@@ -48,8 +52,7 @@ export default function About () {
           and exceed challenges as active participants in shaping the future of
           our world.
         </p>
-        
-      
+
         <h1 className='  text-fuchsia-600 text-center font-bold p-5'>
         VALUES AND PRINCIPALS
         </h1>
@@ -95,8 +98,10 @@ We will continually review and learn from our experiences to evolve our working 
             Earn a Certificate of Participation from the Harvard Division of Continuing Education
             </li>
         </ul>
+        </div>
+      </div>
+    
         
-      <div></div>
-    </div>
+   
   )
 }

@@ -15,7 +15,7 @@ export default function Slider() {
   };
 
   return (
-    <div style={containerStyle} className='w-full h-full'>
+    <div className='w-80 h-full'>
       <Carousel
         autoPlay
         showArrows={false}
