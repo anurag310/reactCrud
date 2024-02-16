@@ -55,7 +55,7 @@ function App () {
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
      
-        <Searchbar/>
+        {/* <Searchbar/> */}
      
         <Footer />
         
